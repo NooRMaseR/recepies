@@ -1,0 +1,56 @@
+.holder {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    background-color: #679b1c;
+    overflow: hidden;
+    z-index: 1;
+
+    & > img {
+        z-index: 2;
+        width: 100% !important;
+        height: 15rem !important;
+        transition: transform .3s ease;
+    }
+
+    &:hover {
+        & .innerDiv {
+            bottom: 10%;
+
+        }
+        
+        & > img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.outerDiv  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    color: #fff;
+    z-index: 4;
+}
+
+.innerDiv {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    color: #fff;
+    z-index: 3;
+    background-color: #64971c80;
+    transition: bottom .3s ease;
+    height: 100%;
+}

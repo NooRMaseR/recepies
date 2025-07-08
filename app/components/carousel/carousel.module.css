@@ -1,0 +1,65 @@
+.carouselHolder {
+  width: 100%;
+}
+
+.imgDiv {
+  height: 40rem;
+  position: relative;
+
+  & img {
+    object-fit: cover;
+  }
+}
+
+.imgInfo {
+  position: absolute;
+  top: 20%;
+  left: 3rem;
+  z-index: 2;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.animate {
+  animation: moveToTop 0.8s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes moveToTop {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.carouselHolder {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  & button {
+    position: absolute;
+    top: 50%;
+    font-size: xx-large;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  & button:first-child {
+    left: 0;
+    z-index: 2;
+  }
+
+  & button:last-child {
+    right: 0;
+  }
+}

@@ -1,0 +1,40 @@
+.polygonDiv {
+    background-color: #fff;
+    width: 12rem;
+    height: 13rem;
+    padding-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 1rem;
+    text-align: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: background-color .2s ease,
+                box-shadow .3s ease,
+                transform .2s ease;
+                
+    & > img {
+        filter: invert(71%) sepia(15%) saturate(1432%) hue-rotate(161deg) brightness(93%) contrast(91%);
+    }
+    
+    &:hover {
+        background-color: #64b9e4;
+        transform: scale(0.95);
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
+
+        & > img {
+            filter: invert(100%);
+        } 
+
+        & p {
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    .polygonDiv {
+        clip-path: none;
+        width: 90%;
+    }
+}

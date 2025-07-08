@@ -1,0 +1,41 @@
+.card {
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 31%;
+    height: 20rem;
+    border: 2px solid #adadad;
+    border-radius: .3rem;
+    box-shadow: -6px 7px 14px 0px #bfbfbf;;
+    padding: 3rem;
+    text-align: center;
+    transition: background-color .2s ease-out,
+                color .2s ease-out,
+                transform .2s ease-out;
+
+    & img {
+        transition: inherit;
+        filter: invert(62%) sepia(88%) saturate(422%) hue-rotate(5deg) brightness(90%) contrast(92%);
+    }
+
+    &:hover {
+        background-color: #f58b28;
+        color: #fff;
+        border: none;
+        transform: translateY(-20px);
+        
+        & img {
+            transform: translateY(-20px) scale(1.2);
+            filter: invert(100%);
+        }
+    }
+
+    & img {
+        color: #f58b28;
+    }
+
+    & h1,h3 {
+        cursor: pointer;
+    }
+}
