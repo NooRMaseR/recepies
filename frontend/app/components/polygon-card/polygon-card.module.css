@@ -14,7 +14,7 @@
                 transform .2s ease;
                 
     & > img {
-        filter: invert(71%) sepia(15%) saturate(1432%) hue-rotate(161deg) brightness(93%) contrast(91%);
+        filter: var(--img-filter-blue);
     }
     
     &:hover {

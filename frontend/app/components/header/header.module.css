@@ -44,13 +44,54 @@
             display: flex;
             gap: 1rem;
     
-            & li {
+            & > li {
                 list-style: none;
                 transition: color .3s ease-in;
 
                 &:hover {
                     color: #db952d;
                 }
+            }
+
+            & .peoductsLinks {
+                position: relative;
+
+                & > div {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+                    top: 100%;
+                    color: #000;
+                    left: 100%;
+                    width: max-content;
+                    background-color: #fff;
+                    padding: 1rem 2rem;
+                    gap: 1rem;
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: opacity .4s ease-out,
+                                left .4s ease-out;
+                    
+                    & a {
+                        padding: .5rem;
+                        border-bottom: 1px solid #e4e4e4;
+
+                        &:hover {
+                            color: var(--base-color);
+                        }
+
+                    }
+                }
+
+
+                &:hover > div,
+                & > div:hover {
+                    opacity: 1;
+                    left: 0;
+                    pointer-events: initial;
+                }
+
             }
         }
     }

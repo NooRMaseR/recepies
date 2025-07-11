@@ -16,11 +16,11 @@
 
     & img {
         transition: inherit;
-        filter: invert(62%) sepia(88%) saturate(422%) hue-rotate(5deg) brightness(90%) contrast(92%);
+        filter: var(--img-filter-orange);
     }
 
     &:hover {
-        background-color: #f58b28;
+        background-color: var(--base-color);
         color: #fff;
         border: none;
         transform: translateY(-20px);

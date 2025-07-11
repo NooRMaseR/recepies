@@ -9,13 +9,13 @@ export default function Footer() {
           <div>
             <h1>REXUS International GmbH</h1>
             <div>
-              <p>Kaempsweg 3</p>
-              <p>22301 Hamburg</p>
-              <p>Germany</p>
+              <p className="no">Kaempsweg 3</p>
+              <p className="no">22301 Hamburg</p>
+              <p className="no">Germany</p>
             </div>
             <div>
-              <p>Tel: +49 40 2828 2470</p>
-              <p>Fax: +49 40 2828 2471</p>
+              <p className="no">Tel: +49 40 2828 2470</p>
+              <p className="no">Fax: +49 40 2828 2471</p>
             </div>
             <p className={styles.lastP}>Email to Rexus International GmbH</p>
           </div>
@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
       </section>
       <section className={styles.footerCopy}>
-        <p>© 2021 REXUS International GmbH</p>
+        <p className="no">© 2021 REXUS International GmbH</p>
       </section>
     </footer>
   );

@@ -1,0 +1,8 @@
+{
+    "runTerminalCommand.commands": [
+        {
+            "command": "bun run build && bun start",
+            "name": "Build Next JS and run it"
+        }
+    ]
+}

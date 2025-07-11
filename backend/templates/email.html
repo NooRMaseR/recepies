@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us Message</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: #fff;
+            max-width: 600px;
+            margin: 40px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 32px 24px;
+        }
+        h2 {
+            color: #2d7a5f;
+            margin-top: 0;
+        }
+        .info {
+            margin-bottom: 24px;
+        }
+        .label {
+            color: #888;
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+        .value {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        .message-box {
+            background: #f4f7fa;
+            border-left: 4px solid #2d7a5f;
+            padding: 16px;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #333;
+            white-space: pre-line;
+        }
+        .footer {
+            margin-top: 32px;
+            font-size: 13px;
+            color: #aaa;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>New Contact Us Message</h2>
+        <div class="info">
+            <div class="label">Name:</div>
+            <div class="value">{{ name }}</div>
+            <div class="label">Email:</div>
+            <div class="value">{{ email }}</div>
+            <div class="label">Subject:</div>
+            <div class="value">{{ subject }}</div>
+        </div>
+        <div class="label">Message:</div>
+        <div class="message-box">
+            {{ body }}
+        </div>
+        <div class="footer">
+            &copy; 2025 Your Company. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>

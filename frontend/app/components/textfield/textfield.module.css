@@ -1,0 +1,13 @@
+.textField {
+    display: flex;
+    flex-direction: column;
+
+    & input, textarea {
+        padding: 5px;
+        border-radius: 7px;
+        border: 1px solid #c5c5c5;
+        width: 18rem;
+        min-height: 2rem;
+        outline: none;
+    }
+}

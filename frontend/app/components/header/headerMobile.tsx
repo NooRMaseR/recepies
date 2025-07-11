@@ -15,7 +15,7 @@ export default function HeaderMobile() {
     <div className={styles.mobile}>
       <nav>
         <Image src="/rexus-logo.png" alt="Logo" fill priority />
-        <FontAwesomeIcon icon={faBars} size="xl" onClick={handelDrawerClick} />
+        <FontAwesomeIcon icon={faBars} size="xl" onClick={handelDrawerClick} color="var(--base-color)" />
       </nav>
 
       <div className={`${styles.navMobile} ${drawerOpened ? styles.drOpen : ""}`}>

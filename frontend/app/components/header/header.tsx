@@ -4,8 +4,8 @@ import {
   faLinkedinIn,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import HeaderMobile from "./headerMobile";
 import styles from "./header.module.css";
 import Image from "next/image";
@@ -14,13 +14,12 @@ import React from "react";
 
 export default function Header() {
   return (
-      <header className={styles.header}>
-          
+    <header className={styles.header}>
       {/* for big screens */}
       <div className={styles.desktop}>
         <section>
           <div>
-            <p>Contact us from anywhere in the world!</p>
+            <p className="no">Contact us from anywhere in the world!</p>
           </div>
           <hr />
           <div className={styles.divContact}>
@@ -54,8 +53,16 @@ export default function Header() {
             <li>
               <Link href="/">Home</Link>
             </li>
-            <li>
+            <li className={styles.peoductsLinks}>
               <Link href="/products">Products</Link>
+              <div>
+                <Link href="/products/concentrated-enzymes">Concentrated Enzymes</Link>
+                <Link href="/products/enzyme-complexes">Enzyme Complexes</Link>
+                <Link href="/products/flour-enhancements">Flour Enhancements</Link>
+                <Link href="/products/pasta-improvers-colorants">Pasta Improvers & Colorants</Link>
+                <Link href="/products/biscuits-wafers">Biscuits & Wafers</Link>
+                <Link href="/products/flour-fortification">Flour Fortification</Link>
+              </div>
             </li>
             <li>
               <Link href="/who-we-are">Who we are</Link>
