@@ -1,0 +1,58 @@
+.enzymesInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap: 3rem;
+    margin-block: 2rem;
+    padding-inline: 5rem;
+
+    & > div:last-child {
+        width: 40%;
+
+        & img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    
+    & > div:first-child {
+        max-width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        & h1 {
+            position: relative;
+            padding-left: 1rem;
+            color: #353535b0;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: red;
+                height: 100%;
+                width: .4rem;
+            } 
+        }
+
+        & p {
+            color: #5e5e5e;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .enzymesInfo {
+        flex-direction: column;
+        padding: 0;
+
+        & > div {
+            width: 100% !important;
+            max-width: 100% !important;
+            padding-inline: 1rem;
+        }
+    }
+}

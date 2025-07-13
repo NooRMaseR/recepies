@@ -1,0 +1,88 @@
+.headDiv {
+    background-image: url('/who-we-are-iStock.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 20rem;
+    height: max-content;
+    padding-block: 7%;
+    padding-left: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cardsHolder {
+    margin-block: 2rem;
+    width: 90%;
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.sides {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-inline: 5rem;
+
+    & div:last-child {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        &>h1 {
+            color: var(--text-color);
+        }
+
+        &>h2 {
+            color: rgb(47, 155, 47);
+        }
+    }
+}
+
+.custom {
+    padding-inline: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &>div {
+        gap: 1rem;
+
+        & > div {
+            width: 70%;
+        }
+
+        & div:last-child {
+            width: max-content;
+        }
+
+    }
+}
+
+@media (max-width: 720px) {
+    .sides, .cardsHolder, .custom, .custom > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sides {
+        padding-inline: 1rem;
+    }
+
+    .cardsHolder div {
+        width: 90%;
+    }
+    
+    .custom {
+        padding-inline: 0;
+        & > div > div:last-child {
+            width: max-content;
+        }
+    }
+}

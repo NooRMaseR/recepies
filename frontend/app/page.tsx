@@ -1,4 +1,5 @@
 import PolygonCard from "./components/polygon-card/polygon-card";
+import Div2Sides from "./components/div-2-sides/div2sides";
 import CardImage from "./components/card-image/card_image";
 import Carousel from "./components/carousel/carousel";
 import Card from "./components/card/card";
@@ -7,7 +8,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className='main'>
       <Carousel
         items={[
           {
@@ -107,33 +108,28 @@ export default function Home() {
         />
       </div>
 
-      <div className={styles.enzymesInfo}>
-        <div>
-          <h1>Let us tell you a short story about the potential of enzymes.</h1>
-          <p>
-            Flour is the key ingredient in bread, and has been one of life&#39;s
+      <Div2Sides
+        title="Let us tell you a short story about the potential of enzymes."
+        contentBelowH1="Flour is the key ingredient in bread, and has been one of life&#39;s
             elixirs for many cultures throughout human history. The milling
             wheat culture has existed for thousands of years and has
             significantly supported human development. Flour has meant life for
             many cultures. Today, more than 5,000 mills around the world produce
             around 450 million tons of flour annually. The natural fluctuating
-            quality of flour is a daily challenge for every miller.
-          </p>
-        </div>
-        <div>
-          <p>
-            Nowadays, the addition of high-tech enzyme preparations plays an
-            important role in flour production and its improvement. Enzymes are
-            natural proteins that catalyse biological reactions. This helps the
-            industry achieve flour standardization by producing flours with
-            improved, consistent baking properties. Most enzyme production
-            worldwide is based in Europe, mainly in Germany, Denmark, and
-            France. Globalization has made enzyme-based flour improvers
-            available around the world, but their key ingredients are most often
-            produced in the European enzyme hub.
-          </p>
-        </div>
-      </div>
+            quality of flour is a daily challenge for every miller."
+      >
+        <p>
+          Nowadays, the addition of high-tech enzyme preparations plays an
+          important role in flour production and its improvement. Enzymes are
+          natural proteins that catalyse biological reactions. This helps the
+          industry achieve flour standardization by producing flours with
+          improved, consistent baking properties. Most enzyme production
+          worldwide is based in Europe, mainly in Germany, Denmark, and France.
+          Globalization has made enzyme-based flour improvers available around
+          the world, but their key ingredients are most often produced in the
+          European enzyme hub.
+        </p>
+      </Div2Sides>
 
       <div className={styles.productRangeH1}>
         <h1>Please have a look at our Rexus product range.</h1>

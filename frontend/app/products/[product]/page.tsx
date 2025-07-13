@@ -11,7 +11,7 @@ export default async function ProductPage({
   const data = products[product];
 
   return (
-    <main className={styles.main}>
+    <main className='main'>
       <div className={styles.head}>
         <Image src={data.image} alt={product} width={200} height={200} />
         <article>

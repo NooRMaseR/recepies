@@ -42,7 +42,6 @@
     align-items: center;
     margin-block: 3rem;
     gap: 22rem;
-
 }
 
 .form {
@@ -59,6 +58,13 @@
         &:hover {
             background-color: rgb(250, 20, 20);
         }
+    }
+
+    & .msg.suc {
+        color: green;
+    }
+    & .msg.err {
+        color: red;
     }
 }
 

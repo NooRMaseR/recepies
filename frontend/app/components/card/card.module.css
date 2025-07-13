@@ -1,8 +1,7 @@
 .card {
     display: flex;
-    place-content: center;
+    place-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 31%;
     height: 20rem;
     border: 2px solid #adadad;

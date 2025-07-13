@@ -1,6 +1,6 @@
 .holder {
     position: relative;
-    width: 20rem;
+    width: max-content;
     height: 20rem;
     background-color: #679b1c;
     overflow: hidden;
@@ -8,7 +8,7 @@
 
     & > img {
         z-index: 2;
-        width: 100% !important;
+        width: fit-content !important;
         height: 15rem !important;
         transition: transform .3s ease;
     }
@@ -53,4 +53,8 @@
     background-color: #64971c80;
     transition: bottom .3s ease;
     height: 100%;
+
+    & p {
+        color: #fff !important;
+    }
 }
